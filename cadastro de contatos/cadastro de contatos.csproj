@@ -7,4 +7,8 @@
     <RootNamespace>cadastro_de_contatos</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Models\Class.cs" />
+  </ItemGroup>
+
 </Project>

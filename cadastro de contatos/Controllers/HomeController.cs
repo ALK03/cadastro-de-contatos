@@ -6,16 +6,14 @@ namespace cadastro_de_contatos.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
         public IActionResult Index()
         {
-            return View();
+            HomeModel home = new HomeModel();
+
+            home.Nome = "Joao";
+            home.Email = "joao@gmail.com";
+
+            return View(home);
         }
 
         public IActionResult Privacy()
