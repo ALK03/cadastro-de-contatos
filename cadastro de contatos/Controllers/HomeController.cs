@@ -8,12 +8,7 @@ namespace cadastro_de_contatos.Controllers
     {
         public IActionResult Index()
         {
-            HomeModel home = new HomeModel();
-
-            home.Nome = "Joao";
-            home.Email = "joao@gmail.com";
-
-            return View(home);
+            return View();
         }
 
         public IActionResult Privacy()
