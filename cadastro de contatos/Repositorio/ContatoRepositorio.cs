@@ -25,7 +25,7 @@ namespace cadastro_de_contatos.Repositorio
 
         public ContatoModel ListarPorId(int id)
         {
-            return _bancoContext.Contatos.FirstOrDefault(x => x.Id == id);
+            return _bancoContext.Contatos.FirstOrDefault(ct => ct.Id == id);
         }
 
         public ContatoModel Atualizar(ContatoModel contato)
